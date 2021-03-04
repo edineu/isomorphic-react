@@ -1,7 +1,7 @@
 {
   "name": "isomorphic-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "Training",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,18 @@
     "url": "git+https://github.com/edineu/isomorphic-react.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edineu Hansen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/edineu/isomorphic-react/issues"
   },
-  "homepage": "https://github.com/edineu/isomorphic-react#readme"
+  "homepage": "https://github.com/edineu/isomorphic-react#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-regenerator-runtime": "^6.5.0"
+  }
 }
