@@ -2,10 +2,29 @@ import express from "express";
 import yields from "express-yields";
 import fs from "fs-extra";
 import webpack from "webpack";
+import { argv } from "optimist";
+import { get } from "request-promise";
+import { questions, question } from "../data/api-real-url";
+import { delay } from "redux-saga";
 
 /** here you define the post and instiate express */
 const port = process.env.PORT || 3000;
 const app = express(); /* here you instatiate the app */
+
+/** if you useLiveData in the the argument as a string that
+ * is equal to true then we'll go with the real  thing.
+ */
+const useLiveData = argv.useLiveData === true;
+
+function* getQuestions() {}
+
+/**
+ * !Deprecated method, do not use
+ * ?Shoud this method be expose in the public API
+ * TODO: refactor this
+ * @edineu My Param The paramenter for this method
+ *
+ */
 
 if (process.env.NODE_ENV === "development") {
   const config = require("../webpack.config.dev.babel").default;
